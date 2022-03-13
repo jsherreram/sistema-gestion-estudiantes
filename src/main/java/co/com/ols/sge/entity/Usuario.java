@@ -41,7 +41,7 @@ public class Usuario implements Serializable {
     private String username;
 
     @NotEmpty(message = "El campo password no puede estar vacío")
-    @Size(min = 4, max = 45, message = "El campo password debe tener entre 3 y 128 caracteres")
+    @Size(min = 3, max = 128, message = "El campo password debe tener entre 3 y 128 caracteres")
     private String password;
 
     @OneToMany
